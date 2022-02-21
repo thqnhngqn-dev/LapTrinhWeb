@@ -4,14 +4,17 @@
   color: black;
   box-sizing: border-box;
   font-family: sans-serif;
+  
 }
 nav {
   background-color: white;
-  padding: 10px 40px 10px 70px;
-  border: 1px solid gray;
+  padding: 10px 30px 10px 30px;
+  /* border: 1px solid gray;
   border-left: none;
-  border-right: none;
-  box-shadow: 50px;
+  border-right: none; */
+}
+nav.header{
+  background-color: F7F7FA;
 }
 nav ul {
   display: flex;
@@ -19,39 +22,50 @@ nav ul {
   align-items: center;
   list-style: none;
   flex-wrap: wrap;
+  height: 80px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
 }
 nav ul .nav-left {
   flex: 1;
   display: inline-flex;
-  background-color: beige;
   margin-left: 10px;
-  
 }
-.a {
+img.img {
+  width: 35x;
+  height: 30px;
   margin: 10px;
-  font-size: 30px;
-  font-weight: 700;
 }
-.b {
+h3.a {
+  margin: 10px;
+  margin-top: ;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  background-color: rgb(238, 130, 162);
+  padding: 10px 16px;
+  border-radius: 50%;
+}
+h3.b {
+  padding-top: 3px;
   margin: 10px;
   margin-left: 20px;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 500;
   align-items: center;
 }
 nav div.item {
-  padding: 0 40px;
+  padding: 0px;
   padding-right: 20%;
   display: inline-flex;
 }
 nav div.item a {
   text-decoration: none;
   padding: 0px 15px;
-  font-size: 18px;
+  font-size: 20px;
 }
 nav ul div.item2 {
   display: inline-flex;
-  padding-right: 40px;
+  padding-right: 0px;
 }
 nav ul div.item2 a {
   text-decoration: none;
@@ -59,11 +73,20 @@ nav ul div.item2 a {
   font-size: 18px;
 }
 
+nav div li#HomeScreen{
+  background-color: gainsboro;
+  border-radius: 4px;
+  padding: 8px 15px;
+}
+nav div li#Home{
+  padding: 8px 15px;
+}
 .menu a {
   color: black;
 }
 .main {
+  padding: 0 30px;
   width: 100%;
-  height: 80%;
+  height: 100%;
   background-color: F7F7FA;
 }
