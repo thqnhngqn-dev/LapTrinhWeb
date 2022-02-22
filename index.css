@@ -4,7 +4,6 @@
   color: black;
   box-sizing: border-box;
   font-family: sans-serif;
-  
 }
 nav {
   background-color: white;
@@ -13,7 +12,7 @@ nav {
   border-left: none;
   border-right: none; */
 }
-nav.header{
+nav.header {
   background-color: F7F7FA;
 }
 nav ul {
@@ -46,7 +45,7 @@ h3.a {
   border-radius: 50%;
 }
 h3.b {
-  padding-top: 3px;
+  padding-top: 8px;
   margin: 10px;
   margin-left: 20px;
   font-size: 24px;
@@ -59,6 +58,7 @@ nav div.item {
   display: inline-flex;
 }
 nav div.item a {
+  color: gray;
   text-decoration: none;
   padding: 0px 15px;
   font-size: 20px;
@@ -66,27 +66,78 @@ nav div.item a {
 nav ul div.item2 {
   display: inline-flex;
   padding-right: 0px;
+  /* background-color: antiquewhite; */
 }
-nav ul div.item2 a {
+nav ul div.item2 a button {
   text-decoration: none;
-  padding: 0px 15px;
+  padding: 5px 15px;
   font-size: 18px;
+  margin: 10px;
 }
-
-nav div li#HomeScreen{
+.docs {
+  background-color: gainsboro;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+}
+.ui {
+  border-block-end: revert;
+  height: 40px;
+}
+.templates {
+  background-color: #5a5b6a;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+}
+b {
+  color: black;
+}
+.templates b {
+  color: white;
+}
+nav div li#HomeScreen {
+  color: black;
   background-color: gainsboro;
   border-radius: 4px;
   padding: 8px 15px;
 }
-nav div li#Home{
+nav div li#HomeScreen a {
+  color: black;
+}
+nav div li#Home {
   padding: 8px 15px;
 }
 .menu a {
   color: black;
 }
+
+/* Main  */
 .main {
-  padding: 0 30px;
+  padding: 2px 250px;
   width: 100%;
   height: 100%;
   background-color: F7F7FA;
+}
+.main-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.option-middle {
+  display: flex;
+  padding: 50px 0px;
+}
+div.option-middle ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table {
+  height: 60%;
+  width: 100%;
+  background-color: white;
+  border: 1px solid rgb(202, 200, 200);
+  border-radius: 5px;
 }
