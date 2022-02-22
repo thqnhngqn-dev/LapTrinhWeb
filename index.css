@@ -122,17 +122,68 @@ nav div li#Home {
 .main-top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-top h1{
+  font-size: 60px;
+}
+.main h2{
+  color: gray;
+}
+.search {
+  margin-top: 17px;
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+.search input#search {
+  width: 300px;
+  height: 50px;
+  background: white;
+  border: solid 2px gainsboro;
+  font-size: 10pt;
+  float: left;
+  padding-left: 45px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+.search .icon {
+  position: absolute;
+  color: darkgray;
+  margin-left: 17px;
+  margin-top: 14px;
 }
 div.option-middle {
   display: flex;
   padding: 50px 0px;
 }
 div.option-middle ul {
+  font-size: 20px;
   list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-flex;
+  padding: 0px 15px;
+}
+div.option-middle ul li {
+  padding: 0px 15px;
+  display: inline-flex;
+}
+div.option-middle ul li a {
+  text-decoration: none;
+  padding-left: 10px;
+}
+/* ... */
+.option-setting {
+  padding: 3px 10px;
+  border: none;
+  font-weight: 800;
+  border-radius: 5px;
+  box-shadow: 2px 1px 2px 1px rgb(0 0 0 / 20%), 0px 0px 0px 1px rgb(0 0 0 / 20%);
+}
+
+.icon {
+  margin-left: 15px;
 }
 .table {
   height: 60%;
@@ -140,4 +191,44 @@ div.option-middle ul {
   background-color: white;
   border: 1px solid rgb(202, 200, 200);
   border-radius: 5px;
+}
+
+/* box */
+.spinner {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  color: #474bff;
+  background: radial-gradient(
+    farthest-side,
+    currentColor calc(100% - 7px),
+    #0000 calc(100% - 6px) 0
+  );
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    #0000 calc(100% - 15px),
+    #000 calc(100% - 13px)
+  );
+  border-radius: 50%;
+  animation: spinner-sm4bhi 2s infinite linear;
+}
+
+.spinner::before,
+.spinner::after {
+  content: "";
+  grid-area: 1/1;
+  background: linear-gradient(currentColor 0 0) center,
+    linear-gradient(currentColor 0 0) center;
+  background-size: 100% 11px, 11px 100%;
+  background-repeat: no-repeat;
+}
+
+.spinner::after {
+  transform: rotate(45deg);
+}
+
+@keyframes spinner-sm4bhi {
+  100% {
+    transform: rotate(1turn);
+  }
 }
